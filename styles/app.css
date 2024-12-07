@@ -20,8 +20,69 @@ body{
     } & p
         {
             margin-top: 4px;
-            font-family: var(--header-txt);
+            font-family: var(--body-txt);
             color: var(--text);
     }
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--shape-body);
+    width: 100%;
+    gap: 42px;
+    padding: 80px 130px;
+    h3{
+        font-family: var(--header-txt);
+        color: var(--text);
+        font-size: 3rem;
+    }
+}
+
+.abtevent{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    font-family: var(--header-txt);
+    font-size: 18px;
+    color: var(--text);
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    fieldset{
+        border: 0px;
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+    /*-----------------------------------------*/
+    label{
+        font-family: var(--body-txt);
+        font-size: 16px;
+        color: var(--text);
+    }
+  /*-----------------------------------------*/
+    input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid var( --input-stroke);
+        border-radius: 10px;
+        padding: 10px;
+        font-family: var(--body-txt);
+        font-size: 16px;
+        background-color: var(--input-base);
+        &::placeholder{
+            color: var(--input-placeholder);
+        }
+    }
+    input:focus {
+        border: 2px solid var( --input-stroke);
+      }
+
+  /*-----------------------------------------*/
+
+}
