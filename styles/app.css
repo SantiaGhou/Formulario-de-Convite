@@ -1,30 +1,27 @@
-#app{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-
+body{
+    display: flex;
+    flex-direction: row;
 }
 
 .asside{
-    position: absolute;
-    height: 100vh;
-    padding: 32px;
-    background-image:  url(/assets/Background.png);
-    background-position: center;
+    background-image: url(../assets/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    padding: 3rem;
     img{
-        width: 3.5rem;
+        width: 20%;
     }
-    & h1{
+    & h2{
         margin-top: 16px;
-        font-size: 2.5rem;
-        color:var(--pink2);
         font-family: var(--logo-title);
-    }
-    & p {
-        margin-top: 4px;
-        color: var(--text);
-        font-family: var(--body-txt);
+        color: var(--pink2);
+        font-size: 30px;
+    } & p
+        {
+            margin-top: 4px;
+            font-family: var(--header-txt);
+            color: var(--text);
     }
 }
+
